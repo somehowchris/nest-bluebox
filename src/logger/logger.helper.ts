@@ -22,11 +22,11 @@ const colorPerLevel = (
 const formatMeta = (
   env: BaseEnvironmentInterface,
 ): ((meta: object) => string | any) => {
-  return env.nodeEnv === 'development'
+  return !env || env.nodeEnv === 'development'
     ? meta =>
-        meta['0'] && meta['0'].startsWith && meta['0'].startsWith('Error')
-          ? meta['0']
-          : JSON.parse(JSON.stringify(meta))
+      meta['0'] && meta['0'].startsWith && meta['0'].startsWith('Error')
+        ? meta['0']
+        : JSON.parse(JSON.stringify(meta))
     : meta => JSON.stringify(meta);
 };
 
@@ -40,7 +40,7 @@ export const nestLikeConsoleFormat = (env: BaseEnvironmentInterface) =>
       return (
         `${bold(
           colorPerLevel(level, blue)(
-            `[${capitalizeFirstLetter(env.app.name)}]`,
+            `[${capitalizeFirstLetter(env && env.app && env.app.name ? env.app.name : '')}]`,
           ),
         )} ` +
         `${colorPerLevel(level, blue)(capitalizeFirstLetter(level))}\t` +

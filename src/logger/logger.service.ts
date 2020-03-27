@@ -2,6 +2,7 @@ import {
   LoggerService as NestLoggerService,
   Injectable,
   Inject,
+  Optional,
 } from '@nestjs/common';
 import { format, Logger, createLogger, transports } from 'winston';
 import { LogLevels } from './log-levels.enum';
@@ -17,7 +18,7 @@ export class LoggerService implements NestLoggerService {
   private readonly logger: Logger;
 
   constructor(
-    @Inject(ENVIRONMENT)
+    @Optional() @Inject(ENVIRONMENT)
     private readonly env: JoinEnvironments<
       LoggerEnvironmentInterface,
       BaseEnvironmentInterface
@@ -28,19 +29,19 @@ export class LoggerService implements NestLoggerService {
         new transports.Console({
           handleExceptions: true,
           format:
-            this.env.logger && this.env.logger.useElastic
+            this.env && this.env.logger && this.env.logger.useElastic
               ? ecsFormat()
               : format.combine(
-                  format.timestamp(),
-                  format.errors({ stack: true }),
-                  nestLikeConsoleFormat(this.env),
-                ),
+                format.timestamp(),
+                format.errors({ stack: true }),
+                nestLikeConsoleFormat(this.env),
+              ),
         }),
       ],
     });
 
     this.log(
-      this.env.logger && this.env.logger.useElastic
+      this.env && this.env.logger && this.env.logger.useElastic
         ? 'Using Elastic styled logging'
         : 'Using custom local logging',
       LoggerService.name,

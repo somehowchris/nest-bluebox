@@ -39,3 +39,35 @@ Contributions welcome! See [Contributing](CONTRIBUTING.md).
 ## License
 
 Licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+# TODO
+- [x] Environmental stuff
+- [x] Logging
+- [x] Serialization & Validation
+- [x] Database Implementation
+- [x] Database Seeding
+- [x] Swagger
+- [x] Health checks
+- [x] Http module with dns ping check
+- [x] User decorator
+- [x] Permission checking & decorator
+- [x] Roles checking & decorator
+- [x] Compression
+- [x] Security
+- [x] Router logging 
+- [x] Auth
+- [ ] Group based validation
+- [ ] Make it work with Graphql Server
+- [ ] Restructure
+- [ ] Testing
+
+- [ ] Transform to library
+- [ ] Documentation
+- [ ] Seed cmd
+- [ ] Make it work with graphql federation
+
+- [ ] Detailed health reports
+- [ ] More detailed elk logging
+- [ ] Auth Service 
+- [ ] Tenant & User Management Service
+- [ ] Roles & Permission Management Service

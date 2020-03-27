@@ -8,12 +8,11 @@ import {
 } from './environment.constants';
 import { EnvironmentValidationType } from './env-validation.type';
 import { Schema } from '@hapi/joi';
+import { BaseEnvironmentValidation } from './env.validation';
 
-@Global()
-@Module({})
 export class EnvironmentModule {
   static register<T extends BaseEnvironmentInterface>(
-    validator: EnvironmentValidationType<T, Schema>,
+    validator?: EnvironmentValidationType<T, Schema>,
   ): DynamicModule {
     return {
       global: true,
@@ -27,7 +26,7 @@ export class EnvironmentModule {
         },
         {
           provide: ENVIRONMENT_VALIDATOR,
-          useValue: validator,
+          useValue: validator || BaseEnvironmentValidation,
         },
         {
           provide: EnvService,

@@ -1,11 +1,11 @@
 {
   "name": "@lib/nest-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "NestJS npm package starter",
   "author": "John Biundo <johnfbiundo@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "main": "dist/test.js",
+  "main": "dist/index.js",
   "files": [
     "dist/**/*",
     "*.md"

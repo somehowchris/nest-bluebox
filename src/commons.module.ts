@@ -27,4 +27,4 @@ import { PermissionsModule } from './permissions/permissions.module';
     PermissionsModule,
   ],
 })
-export class CommonsModule {}
+export class CommonModules {}

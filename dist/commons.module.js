@@ -14,9 +14,9 @@ const security_module_1 = require("./security/security.module");
 const validation_module_1 = require("./validation/validation.module");
 const roles_module_1 = require("./roles/roles.module");
 const permissions_module_1 = require("./permissions/permissions.module");
-let CommonsModule = class CommonsModule {
+let CommonModules = class CommonModules {
 };
-CommonsModule = __decorate([
+CommonModules = __decorate([
     common_1.Module({
         imports: [
             logger_module_1.LoggerModule,
@@ -37,5 +37,5 @@ CommonsModule = __decorate([
             permissions_module_1.PermissionsModule,
         ],
     })
-], CommonsModule);
-exports.CommonsModule = CommonsModule;
+], CommonModules);
+exports.CommonModules = CommonModules;

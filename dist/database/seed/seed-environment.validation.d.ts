@@ -1,8 +1,8 @@
 export declare const SeedEnvironmentValidation: {
-    logger: import("../../env/env-validation.type").EnvironmentValidationType<{
+    logger: import("../..").EnvironmentValidationType<{
         readonly useElastic: boolean;
     }, any>;
-    database: import("../../env/env-validation.type").EnvironmentValidationType<{
+    database: import("../..").EnvironmentValidationType<{
         readonly type: string;
         readonly host: string;
         readonly port: number;
@@ -13,7 +13,7 @@ export declare const SeedEnvironmentValidation: {
     }, any>;
     nodeEnv: any;
     port: any;
-    app: import("../../env/env-validation.type").EnvironmentValidationType<{
+    app: import("../..").EnvironmentValidationType<{
         readonly name: string;
     }, any>;
 };

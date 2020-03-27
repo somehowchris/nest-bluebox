@@ -1,0 +1,2 @@
+export declare const HTTP_MODULE = "COMMONS:HTTP_MODULE";
+export declare const HTTP_MODULE_CONFIG = "COMMONS:HTTP_MODULE_CONFIG";

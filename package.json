@@ -93,5 +93,8 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "bin": {
+    "nest-seed": "dist/database/seed/seed.command.js"
   }
 }

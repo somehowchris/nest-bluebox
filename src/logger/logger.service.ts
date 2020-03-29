@@ -18,7 +18,8 @@ export class LoggerService implements NestLoggerService {
   private readonly logger: Logger;
 
   constructor(
-    @Optional() @Inject(ENVIRONMENT)
+    @Optional()
+    @Inject(ENVIRONMENT)
     private readonly env: JoinEnvironments<
       LoggerEnvironmentInterface,
       BaseEnvironmentInterface
@@ -32,10 +33,10 @@ export class LoggerService implements NestLoggerService {
             this.env && this.env.logger && this.env.logger.useElastic
               ? ecsFormat()
               : format.combine(
-                format.timestamp(),
-                format.errors({ stack: true }),
-                nestLikeConsoleFormat(this.env),
-              ),
+                  format.timestamp(),
+                  format.errors({ stack: true }),
+                  nestLikeConsoleFormat(this.env),
+                ),
         }),
       ],
     });

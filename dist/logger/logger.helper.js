@@ -24,7 +24,7 @@ const colorPerLevel = (level, defaultColor) => {
     }
 };
 const formatMeta = (env) => {
-    return env.nodeEnv === 'development'
+    return !env || env.nodeEnv === 'development'
         ? meta => meta['0'] && meta['0'].startsWith && meta['0'].startsWith('Error')
             ? meta['0']
             : JSON.parse(JSON.stringify(meta))
@@ -35,7 +35,7 @@ const localDate = (timestamp) => {
 };
 exports.nestLikeConsoleFormat = (env) => winston_1.format.printf((_a) => {
     var { context, level, timestamp, message } = _a, meta = __rest(_a, ["context", "level", "timestamp", "message"]);
-    return (`${safe_1.bold(colorPerLevel(level, safe_1.blue)(`[${string_1.capitalizeFirstLetter(env.app.name)}]`))} ` +
+    return (`${safe_1.bold(colorPerLevel(level, safe_1.blue)(`[${string_1.capitalizeFirstLetter(env && env.app && env.app.name ? env.app.name : '')}]`))} ` +
         `${colorPerLevel(level, safe_1.blue)(string_1.capitalizeFirstLetter(level))}\t` +
         ('undefined' !== typeof timestamp
             ? colorPerLevel(level, safe_1.white)(`${localDate(timestamp)} `)

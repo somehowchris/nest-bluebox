@@ -26,13 +26,13 @@ let LoggerService = LoggerService_1 = class LoggerService {
             transports: [
                 new winston_1.transports.Console({
                     handleExceptions: true,
-                    format: this.env.logger && this.env.logger.useElastic
+                    format: this.env && this.env.logger && this.env.logger.useElastic
                         ? ecsFormat()
                         : winston_1.format.combine(winston_1.format.timestamp(), winston_1.format.errors({ stack: true }), logger_helper_1.nestLikeConsoleFormat(this.env)),
                 }),
             ],
         });
-        this.log(this.env.logger && this.env.logger.useElastic
+        this.log(this.env && this.env.logger && this.env.logger.useElastic
             ? 'Using Elastic styled logging'
             : 'Using custom local logging', LoggerService_1.name);
     }
@@ -56,6 +56,7 @@ let LoggerService = LoggerService_1 = class LoggerService {
 };
 LoggerService = LoggerService_1 = __decorate([
     common_1.Injectable(),
+    __param(0, common_1.Optional()),
     __param(0, common_1.Inject(environment_constants_1.ENVIRONMENT)),
     __metadata("design:paramtypes", [Object])
 ], LoggerService);

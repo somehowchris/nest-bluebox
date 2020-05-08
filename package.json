@@ -1,8 +1,8 @@
 {
-  "name": "@lib/nest-starter",
-  "version": "0.1.0",
-  "description": "NestJS npm package starter",
-  "author": "John Biundo <johnfbiundo@gmail.com>",
+  "name": "@somehowchris/nest-bluebox",
+  "version": "0.0.1",
+  "description": "Experiments and solutions to simplify type safe integrations",
+  "author": "Christof Weickhardt <chweicki@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "main": "dist/index.js",
@@ -25,13 +25,13 @@
     "nestjs"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsplus/nestjs-package-starter"
+    "url": "https://github.com/somehowchris/nest-bluebox"
   },
-  "bugs": "https://github.com/nestjsplus/nestjs-package-starter",
   "peerDependencies": {
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^7.0.6",

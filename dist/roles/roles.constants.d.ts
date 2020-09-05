@@ -1,0 +1,1 @@
+export declare const ROLES_DECORATOR_KEY = "COMMONS:ROLES_DECORATOR_KEY";

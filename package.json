@@ -44,7 +44,7 @@
     "@elastic/ecs-winston-format": "^0.2.0",
     "@godaddy/terminus": "^4.4.1",
     "@hapi/joi": "^17.1.1",
-    "@nestjs/jwt": "^7.0.0",
+    "@nestjs/jwt": "^7.1.0",
     "@nestjs/microservices": "^7.3.2",
     "@nestjs/passport": "^7.0.0",
     "@nestjs/swagger": "^4.6.0",

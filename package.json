@@ -41,7 +41,7 @@
     "class-validator": "^0.12.0-rc.0"
   },
   "dependencies": {
-    "@elastic/ecs-winston-format": "^0.2.0",
+    "@elastic/ecs-winston-format": "^1.1.0",
     "@godaddy/terminus": "^4.4.1",
     "@hapi/joi": "^17.1.1",
     "@nestjs/jwt": "^7.0.0",

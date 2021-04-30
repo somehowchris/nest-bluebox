@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 15.0.0
+  - dependency-name: "@nestjs/passport"
+    versions:
+    - 7.1.5
+  - dependency-name: class-validator-jsonschema
+    versions:
+    - 3.0.1

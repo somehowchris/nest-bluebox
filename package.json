@@ -1,6 +1,6 @@
 {
   "name": "@somehowchris/nest-bluebox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Experiments and solutions to simplify type safe integrations",
   "author": "Christof Weickhardt <chweicki@gmail.com>",
   "license": "MIT",

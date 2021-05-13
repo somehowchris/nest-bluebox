@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@elastic/ecs-winston-format": "^1.1.0",
-    "@godaddy/terminus": "^4.7.1",
+    "@godaddy/terminus": "^4.7.2",
     "@hapi/joi": "^17.1.1",
     "@nestjs/jwt": "^7.2.0",
     "@nestjs/microservices": "^7.3.2",

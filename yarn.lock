@@ -1518,10 +1518,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-class-validator-jsonschema@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/class-validator-jsonschema/-/class-validator-jsonschema-3.0.1.tgz#22e7ca733330663a1a2c68bc5f64355253524dd6"
-  integrity sha512-ynQ7adDhT+1VFNR7q5Q8bEZwZQxi0//81t2mlg+tf+lN711iw/XQvYY7xgyb5n9bh9mRP+VzyH00BNY9jVyVRQ==
+class-validator-jsonschema@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/class-validator-jsonschema/-/class-validator-jsonschema-3.1.0.tgz#95cafa347ddc9da49343639d3261f85d23b06d39"
+  integrity sha512-1If+ZK3ZKhJfA7QWi064RJ2oTadBqmBtVPRb4DyxIlWS2m2hc9kWHwoEfycOroVfTuANMZ4XOtp3JD27U5V95w==
   dependencies:
     lodash.groupby "^4.6.0"
     lodash.merge "^4.6.2"

@@ -213,10 +213,10 @@
   dependencies:
     fast-json-stringify "^2.4.1"
 
-"@elastic/ecs-winston-format@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@elastic/ecs-winston-format/-/ecs-winston-format-1.1.0.tgz#c2d68f7913e191bd6fc05f870257738fcc9d782d"
-  integrity sha512-PBY4ExVs5v4LUV5CLsGpn9BagxKGJTJHU0EawmX7E6nxIV9zGTHtRJCqLnBYNXeS5XrTLeyiC97SYrRxSLcM7Q==
+"@elastic/ecs-winston-format@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@elastic/ecs-winston-format/-/ecs-winston-format-1.3.0.tgz#55973b74bbe15cd717f88fb97e6ac57c11898c40"
+  integrity sha512-UvVP96YVNr+91ASQ5QTz4jIc4ZY+1ZJVuMt+AO+3Uj6+cg4XD+vZRgSvYs9lMnlV1HAmCNgDHD17UmWpLdjQAg==
   dependencies:
     "@elastic/ecs-helpers" "^1.1.0"
 

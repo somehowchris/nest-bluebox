@@ -73,7 +73,7 @@
     "class-validator": "^0.13.1",
     "jest": "24.9.0",
     "prettier": "2.3.0",
-    "supertest": "6.1.3",
+    "supertest": "6.1.6",
     "ts-jest": "24.3.0",
     "ts-node": "10.4.0",
     "tsc-watch": "4.4.0",
